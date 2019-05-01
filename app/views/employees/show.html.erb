@@ -1,0 +1,11 @@
+<h1><%= @employee.full_name %></h1>
+<h3><%= flash[:notice] if flash[:notice] %></h3>
+<ul>
+  <li>First Name: <%= @employee.first_name %></li>
+  <li>Last Name: <%= @employee.last_name %></li>
+  <li>Alias: <%= @employee.alias %></li>
+  <li>Title: <%= @employee.title %></li>
+  <li>Office: <%= @employee.office %></li>
+  <li>Photo: <br><img src="<%= @employee.img_url %>" alt="employee_portrait"></li>
+  <li>Connected Dog: <%= @employee.dog.name %></li>
+</ul>
